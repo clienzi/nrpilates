@@ -39,3 +39,15 @@ const showSlide = (index) => {
 };
 document.querySelector('.gallery-prev')?.addEventListener('click', () => showSlide(currentSlide - 1));
 document.querySelector('.gallery-next')?.addEventListener('click', () => showSlide(currentSlide + 1));
+
+
+// Os vídeos da galeria são sempre silenciosos, inclusive após qualquer interação.
+document.querySelectorAll('.video-frame video').forEach((video) => {
+  video.muted = true;
+  video.defaultMuted = true;
+  video.volume = 0;
+  video.addEventListener('volumechange', () => {
+    video.muted = true;
+    video.volume = 0;
+  });
+});

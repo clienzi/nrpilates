@@ -19,3 +19,21 @@
 @keyframes gallery-in{from{opacity:.2;transform:scale(1.015)}to{opacity:1;transform:scale(1)}}
 @media(max-width:980px){.gallery-slide{height:450px}.about-photo{width:230px;height:280px}}
 @media(max-width:720px){.gallery-heading{align-items:flex-start;flex-direction:column;gap:25px;margin-bottom:30px}.gallery-controls{align-self:flex-end}.studio-gallery{padding:0 0 85px}.gallery-slide{height:390px;border-radius:110px 8px 8px 8px}.gallery-slide:after{inset:14px;border-radius:95px 4px 4px 4px}.gallery-slide figcaption{left:25px;bottom:24px;font-size:24px;max-width:75%}.split-photo{min-height:360px;border-radius:8px 120px 8px 8px}.split-photo img{min-height:360px}.split-photo:after{inset:14px;border-radius:2px 100px 2px 2px}.about-photo{align-self:center;width:220px;height:270px}}
+
+
+/* Video wall — quatro colunas silenciosas */
+.video-section { background: #f3eee8; padding: 7.5rem 0 8rem; overflow: hidden; }
+.video-section-head { display: flex; justify-content: space-between; gap: 4rem; align-items: end; margin-bottom: 3rem; }
+.video-section-head > p { max-width: 28rem; color: #6e716c; line-height: 1.8; margin: 0 0 .35rem; }
+.video-wall { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.2rem; }
+.video-card { min-width: 0; }
+.video-frame { position: relative; aspect-ratio: 9 / 13; overflow: hidden; background: #d7d0c7; border-radius: 1.15rem 1.15rem .3rem .3rem; box-shadow: 0 1.25rem 2.5rem rgba(35,77,67,.08); }
+.video-frame::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(24,48,42,.02) 48%, rgba(20,38,33,.46)); pointer-events: none; }
+.video-frame video { width: 100%; height: 100%; object-fit: cover; display: block; filter: saturate(.88) contrast(.98); }
+.video-badge, .video-index { position: absolute; z-index: 1; color: #fff; font-size: .62rem; letter-spacing: .16em; text-transform: uppercase; }
+.video-badge { left: 1rem; bottom: .9rem; }
+.video-index { right: 1rem; top: 1rem; font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; letter-spacing: 0; opacity: .9; }
+.video-card h3 { color: #234d43; font-family: 'Cormorant Garamond', serif; font-size: 1.55rem; font-weight: 600; margin: 1.05rem 0 .2rem; }
+.video-card p { color: #7b7d77; font-size: .78rem; margin: 0; }
+@media (max-width: 900px) { .video-wall { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.35rem .9rem; } .video-section-head { gap: 2rem; } }
+@media (max-width: 620px) { .video-section { padding: 5rem 0 5.5rem; } .video-section-head { display: block; margin-bottom: 2rem; } .video-section-head > p { margin-top: 1.2rem; } .video-wall { grid-template-columns: repeat(2, minmax(0, 1fr)); } .video-card h3 { font-size: 1.25rem; } .video-card p { font-size: .68rem; } }
