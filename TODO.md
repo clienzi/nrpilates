@@ -26,6 +26,12 @@
 - [ ] O telefone público deve aparecer como (11) 95448-8396.
 
 ## Preparação para continuidade
-- [ ] A galeria deve aceitar a substituição das fotos públicas de referência pelas fotos adicionais que a cliente enviar.
+- [x] A galeria deve aceitar a substituição das fotos públicas de referência pelas fotos adicionais que a cliente enviar; as dez fotos recebidas foram incorporadas ao site e sete ficaram disponíveis no carrossel.
 - [ ] O projeto deve incluir a rota `/` em `public/manus-routes.json`.
 - [ ] O projeto deve estar preparado para checkpoint no GitHub e deploy vinculado na Vercel após a configuração da conta/repositório.
+
+
+## Ajustes fotográficos solicitados
+- [x] Espalhar as imagens enviadas pela cliente no hero, seção de Pilates, seção de Fisioterapia, seção Sobre e galeria/carrossel.
+- [x] Substituir os símbolos dos botões flutuantes por ícones SVG oficiais de Instagram e WhatsApp, mantendo os links fornecidos.
+- [x] Substituir o monograma NR grande da seção Sobre por uma foto do estúdio/aula.
