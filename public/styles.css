@@ -37,3 +37,10 @@
 .video-card p { color: #7b7d77; font-size: .78rem; margin: 0; }
 @media (max-width: 900px) { .video-wall { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.35rem .9rem; } .video-section-head { gap: 2rem; } }
 @media (max-width: 620px) { .video-section { padding: 5rem 0 5.5rem; } .video-section-head { display: block; margin-bottom: 2rem; } .video-section-head > p { margin-top: 1.2rem; } .video-wall { grid-template-columns: repeat(2, minmax(0, 1fr)); } .video-card h3 { font-size: 1.25rem; } .video-card p { font-size: .68rem; } }
+
+
+/* Logo oficial da marca */
+.brand-logo { display:block; width: clamp(132px, 13vw, 188px); height:auto; max-height:72px; object-fit:contain; object-position:left center; }
+.footer-logo { display:block; width:clamp(150px, 18vw, 220px); height:auto; max-height:92px; object-fit:contain; object-position:left center; opacity:.95; }
+.footer-brand p { margin: 0; }
+@media (max-width: 760px) { .brand-logo { width:148px; max-height:64px; } .footer-logo { width:180px; } }
